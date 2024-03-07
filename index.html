@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Skills Progress Bars</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" direction="vertical"
+            space-between="30" mousewheel="true">
+            
+            <swiper-slide>
+                <h1>Drawing</h1>
+                <br>
+                <div class="progress-bar">
+                    <h3>Proficiency level</h3>
+                    <div id="myProgress">
+                        <div id="myBar">0%</div>
+                        <div id="1"></div>
+                    </div>
+                    <body onload="move()"></body>
+                    <br>
+                    
+                </div>
+            </swiper-slide>
+            <h3>drawing</h3>
+            <div class="container">
+                <div class="skills exercising">90%</div>
+            </div>
+            
+            <swiper-slide>
+                <div>
+                    <h3>Excercising</h3>
+                    <div class="container">
+                        <div class="skills exercising">10%</div>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <h1>Analysing</h1>
+                <div>
+                    <h3>Proficiency level</h3>
+                    <div id="myProgress">
+                        <div id="myBar">0%</div>
+                    </div>
+                </div>
+                <br>
+                <button onclick="move()">Click Me</button>
+
+            </swiper-slide>
+        </swiper-container>
+
+  
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
